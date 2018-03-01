@@ -1,0 +1,11 @@
+<h3>ng-switch</h3>
+<ul class="nav nav-tabs">
+	<li  [class.active]="tab == 'home'"><a href="#" (click)= "changeTab('home')">Home</a></li>
+	<li  [class.active]="tab == 'profile'" ><a href="#" (click)= "changeTab('profile')" >Profile</a></li>	
+</ul>
+
+<div [ngSwitch]="tabs">
+	<p  *ngSwitchCase="'home'"  >Home</p>
+	<p  *ngSwitchCase="'profile'"   >Profile</p>
+	<p  *ngSwitchDefault > ngSwitchDefault</p>
+</div>

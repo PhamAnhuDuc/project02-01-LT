@@ -1,0 +1,7 @@
+<h3 *ngIf="isShow">ngIF</h3>
+
+<input type="text"  class="form-control" #number (keyup)="0">
+<div class="alert alert-danger" *ngIf="number.value !='' && number.value <= 10 ">
+	
+	<strong>number is greater than 10 </strong>
+</div>
